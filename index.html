@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>DGF</title>
+    <!-- C S S -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- I C O N O  -->
+    <link rel="shortcut icon" href="./img/fabicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+      <header>
+        <div class="logo">
+          <a href="./index.html">GFD</a>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+            <li>
+              <a href="#curriculum" onclick="seleccionar()">CURRICULUM</a>
+            </li>
+            <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+            <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+          </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+      <div class="contenido-banner">
+        <div class="contenedor-img">
+          <img src="./img/000.jpg" alt="" />
+        </div>
+        <h1>Fran Garcia</h1>
+        <h2 class="typedwriter">Desarrollador Frontend</h2>
+        <div class="redes">
+          <a href="https://www.facebook.com/profile.php?id=100089533867102"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://github.com/franndev42"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/francisco-garcia-51b211277/"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://www.instagram.com/frangarccia1/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+      <div class="contenido-seccion">
+        <h2>Sobre Mí</h2>
+        <p>
+          <span>Hola, soy Fran Garcia. Desarrollador Frontend</span> y Aprendiz
+          en Backend, estudiante de Ingeniería Informática, soy un apasionado desarrollador web en crecimiento con un fuerte
+          deseo de aprender y crecer en el emocionante mundo del desarrollo
+          web. Mi objetivo es combinar mi creatividad y habilidades técnicas
+          para crear soluciones web atractivas y funcionales. Aunque tengo
+          experiencia limitada en el, he estado trabajando en
+          proyectos personales y académicos para mejorar mis habilidades en
+          HTML, CSS y JavaScript. También he tenido la oportunidad de
+          explorar frameworks como Bootstrap y Tailwind, entre otros,aprender los conceptos
+          básicos de programación backend. Estoy emocionado por la
+          oportunidad de colaborar en proyectos más desafiantes y seguir
+          mejorando mis habilidades. Mi enfoque se basa en la resolución de
+          problemas, la atención al detalle y la voluntad de enfrentar
+          nuevos desafíos.
+        </p>
+
+        <div class="fila">
+          <!-- datos personales -->
+          <div class="col">
+            <h3>Datos Personales</h3>
+            <ul>
+              <li>
+                <strong>Teléfono</strong>
+                (+54)011-6748-5247
+              </li>
+              <li>
+                <strong>Email</strong>
+                frangarciaforwork@gmail.com
+              </li>
+
+              <li>
+                <strong>Cargo</strong>
+                <span>FREELANCE</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- intereses -->
+          <div class="col">
+            <h3>Intereses</h3>
+            <div class="contenedor-intereses">
+              <div class="interes">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>JUEGOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-headphones"></i>
+                <span>MUSICA</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-plane"></i>
+                <span>VIAJAR</span>
+              </div>
+              <div class="interes">
+                <i class="fa-brands fa-apple"></i>
+                <span>MAC OS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-person-hiking"></i>
+                <span>DEPORTE</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-book"></i>
+                <span>LIBROS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car"></i>
+                <span>AUTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-camera"></i>
+                <span>FOTOS</span>
+              </div>
+              <div class="interes">
+                <i class="fa-solid fa-car-on"></i>
+                <span>CARRERAS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button>
+          <a href="./img/CVdev.pdf"
+            >Descargar CV <i class="fa-solid fa-download"></i
+          ></a>
+
+          <span class="overlay"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+      <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+          <!-- Technical Skill -->
+          <div class="col">
+            <h3>Technical Skills</h3>
+            <div class="skill">
+              <span>Javascript</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>65%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>HTML & CSS</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Photoshop</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>95%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Wordpress</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>71%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>React</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>61%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Tailwind</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>75%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Boostrap 5</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>89%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Git / Node js</span>
+              <div class="barra-skill">
+                <div class="progreso">
+                  <span>84%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+
+    <section id="curriculum" class="curriculum">
+      <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+          <div class="col izquierda">
+            <h3>EDUCACIÓN</h3>
+            <div class="item izq">
+              <h4>Ingeniería Informática - UBA</h4>
+              <span class="casa">Universidad Buenos Aires</span>
+              <span class="fecha">2023</span>
+              <p>
+                actualmente cursando el primer año de la carrera <br />
+
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+            <div class="item izq">
+              <h4>Desarrollador Web</h4>
+              <span class="casa">Curso Terciario</span>
+              <span class="fecha">2023</span>
+              <p>Me gradué como Desarrollador Web en Coder House, obteniendo mi título después de completar con éxito el programa de formación. Estoy capacitado para crear sitios web funcionales y atractivos, y estoy listo para enfrentar desafíos en el campo del desarrollo web. Este título demuestra mi dedicación y competencia en este campo tecnológico.
+              </p>
+              <div class="conectori">
+                <div class="circuloi"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col derecha">
+            <h3>EXPERIENCIAS</h3>
+            <div class="item der">
+              <h4>Creador de Landing Page & Posicionamiento SEO</h4>
+              <span class="casa">Empresa Financiera</span>
+              <span class="fecha">2023: 03-08</span>
+              <p>He creado una landing page atractiva para un negocio de moda masculina. Esta página muestra tu selección de prendas con un diseño moderno y llamado a la acción efectivo para convertir visitantes en clientes.</p>
+              <img src="./img/titulo.png" alt="" />
+              <div class="conectord">
+                <div class="circulod"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+          <div class="proyecto">
+            <img src="../img/p6.jpg" alt="" />
+            <div class="overlay">
+              <a href="https://porfafolio-gdev.000webhostapp.com/">
+                <h3>Proyectos</h3>
+              </a>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="./img/ciudad3D.png" alt="" />
+            <div class="overlay">
+              <h3><a href="https://porfafolio-gdev.000webhostapp.com/">Proyectos</a></h3>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="../img/p3.jpg" alt="" />
+            <div class="overlay">
+              <h3>Proyectos</h3>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="../img/p4.jpg" alt="" />
+            <div class="overlay">
+              <h3>Proyectos</h3>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="../img/p5.jpg" alt="" />
+            <div class="overlay">
+              <h3>Proyectos</h3>
+            </div>
+          </div>
+          <div class="proyecto">
+            <img src="../img/p1.jpg" alt="" />
+            <div class="overlay">
+              <h3>Proyectos</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+      <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+          <!-- Formulario -->
+          <div class="col">
+            <form
+              action="https://formsubmit.co/frangarciaforwork@gmail.com"
+              method="POST"
+            >
+              <label for="name">Nombre</label>
+              <input type="text" name="name" id="name" placeholder="Nombre" />
+
+              <label for="phone">Telefono</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Telefono"
+              />
+
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" />
+
+              <label for="Mensaje">Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="30"
+                rows="7"
+                placeholder="Mensaje"
+              ></textarea>
+
+              <button>
+                Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+              </button>
+            </form>
+
+            <!-- 
+            <div class="form-txt">
+                <a href="#">Politica de Privacidad</a>
+                <a href="#">Terminos y Condiciones</a>
+            </div> -->
+
+            <!-- <form method="post">
+            <input type="text" placeholder="Tú Nombre" />
+            <input type="text" placeholder="Número telefónico" />
+            <input type="text" placeholder="Dirección de correo" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensaje"
+            ></textarea>
+            <button>
+              Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+              <span class="overlay"></span>
+            </button>
+        </form> -->
+          </div>
+          <!-- Mapa -->
+          <div class="col">
+            <img src="../img/ubicacion.png" alt="" />
+            <div class="info">
+              <ul>
+                <li>
+                  <i class="fa-solid fa-location-dot"></i>
+                  Buenos Aires,Ezeiza
+                </li>
+                <li>
+                  <i class="fa-solid fa-mobile-screen"></i>
+                  Llamanos: (011) 6748-5247
+                </li>
+                <li>
+                  <i class="fa-solid fa-envelope"></i>
+                  Email: frangarciaforwork@gmail.com
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+      </a>
+
+      &copy;GdeVja-2023 Todos los derechos reservados
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
